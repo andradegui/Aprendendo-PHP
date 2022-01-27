@@ -37,6 +37,8 @@ $contasCorrentes[741848] = [
     
 ];
 
+
+
 foreach ($contasCorrentes as $cpf => $conta) {
     echo $cpf . " " . $conta['titular'] . '<br>';
 }
