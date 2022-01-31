@@ -1,37 +1,6 @@
 <?php
 
-function exibeMensagem($mensagem)
-{
-    echo $mensagem . " <br>";
-};
-
-function sacar($conta, $vlSaque)
-{
-
-    if ($vlSaque > $conta['saldo']) {
-        exibeMensagem('Você não pode sacar este valor ' . $conta['titular']);
-    } else {
-        $conta['saldo'] -= $vlSaque;
-    }
-
-    return $conta;
-}
-
-function depositar($conta, float $vlDeposito)
-{
-
-    if ($vlDeposito > 0) {
-
-        $conta['saldo'] += $vlDeposito;
-        return $conta;
-
-    } else {
-        exibeMensagem("Depositos precisam ser positivos");
-    }
-};
-
-
-
+require_once 'funcoes.php';//para incluir o código de um arquivo
 
 $contasCorrentes = [
     123654 => [
@@ -52,10 +21,15 @@ $contasCorrentes[123654] = depositar($contasCorrentes[123654], 10.80);
 
 $contasCorrentes[123745] = sacar($contasCorrentes[123745], 10);
 
-foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . " " . $conta['saldo']);
-}
+// faz com que um dado na array seja excluido
+//unset ($contasCorrentes[123745]);
 
+letrasMaiusculas($contasCorrentes['416541']);
+
+foreach ($contasCorrentes as $cpf => $conta) {
+    ['titular' => $titular, 'saldo' => $saldo] = $conta;
+    exibeMensagem("$cpf $titular $saldo");
+}
 
 
 /*for($i=0; $i<count($contasCorrentes); $i++) {
