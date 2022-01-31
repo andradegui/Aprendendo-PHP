@@ -26,6 +26,7 @@ $contasCorrentes[123745] = sacar($contasCorrentes[123745], 10);
 
 letrasMaiusculas($contasCorrentes['416541']);
 
+//função list
 foreach ($contasCorrentes as $cpf => $conta) {
     ['titular' => $titular, 'saldo' => $saldo] = $conta;
     exibeMensagem("$cpf $titular $saldo");

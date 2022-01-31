@@ -32,5 +32,6 @@ function depositar($conta, float $vlDeposito)
 
 //o & passa exatamente uma cópia do paramêtro da função
 function letrasMaiusculas(array &$conta){
+    //strtoupper deixa tudo em maiusculo
     $conta['titular'] = strtoupper($conta['titular']);
 }
