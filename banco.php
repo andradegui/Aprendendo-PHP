@@ -26,13 +26,43 @@ $contasCorrentes[123745] = sacar($contasCorrentes[123745], 10);
 
 letrasMaiusculas($contasCorrentes['416541']);
 
-//função list
+/*/função list
 foreach ($contasCorrentes as $cpf => $conta) {
     ['titular' => $titular, 'saldo' => $saldo] = $conta;
     exibeMensagem("$cpf $titular $saldo");
 }
-
+*/
 
 /*for($i=0; $i<count($contasCorrentes); $i++) {
     echo $contasCorrentes[$i]['titular'] . "<br>";
 }*/
+
+/*echo "<ul>";
+foreach ($contasCorrentes as $cpf => $conta){
+    exibeConta($conta);
+}
+echo "</ul>";
+*/
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas Correntes</title>
+</head>
+<body>
+    <h1>Contas Correntes</h1>
+
+    <?php foreach ($contasCorrentes as $cpf => $conta) {?>
+    <dl>
+        <dt><h3> <?= $conta['titular']; ?> - <?= $cpf; ?></h3></dt>
+        <dd> Saldo: <?= $conta['saldo']; ?></dd>
+    </dl>
+    <?php } ?>  
+
+</body>
+</html>

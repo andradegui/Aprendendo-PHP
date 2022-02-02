@@ -35,3 +35,7 @@ function letrasMaiusculas(array &$conta){
     //strtoupper deixa tudo em maiusculo
     $conta['titular'] = strtoupper($conta['titular']);
 }
+
+function exibeConta(array &$conta){
+   echo "<li>Titular: $conta[titular] . Saldo: {$conta['saldo']}</li>";
+}
