@@ -8,10 +8,12 @@
 
 - Desafios de IMC, Par ou Ímpar, Tabuada
 
-# Branch Curso 2
+# Branch Curso 2 - Avançando com PHP: Arrays, Strings, Função e Web
 
 - PHP na Web
 
 - Rodar comando para criar um servidor web: php -S localhost:8000
 
 - Obs: servidor apenas para testes e criar projeto fora do xampp
+
+# Curso 3 - Orientação a Objetos com PHP: Classes, métodos e atributos
