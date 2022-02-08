@@ -17,3 +17,7 @@
 - Obs: servidor apenas para testes e criar projeto fora do xampp
 
 # Curso 3 - Orientação a Objetos com PHP: Classes, métodos e atributos
+
+- refatorando código PHP
+
+- aprendendo sobre classes e funções
