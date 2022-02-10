@@ -4,9 +4,9 @@ class Conta
 {
     //definir dados da conta
 
-    public $cpfTitular;
-    public $nomeTitular;
-    public $saldo = 0;
+    private $cpfTitular;
+    private $nomeTitular;
+    private $saldo = 0;
 
     public function sacar(float $valorSaque)
     {
@@ -39,5 +39,29 @@ class Conta
 
         $this->sacar($valor);
         $contaDestino->depositar($valor);
+    }
+
+    public function mostraSaldo(): float {
+
+        return $this->saldo;
+    }
+
+    public function defineNome(string $nome): void {
+
+        $this->nomeTitular = $nome;
+    }    
+
+    public function mostraNome(): string {
+        return $this->nomeTitular;
+    }
+
+    public function defineCPF(string $cpf){
+
+        $this->cpfTitular = $cpf;
+    }
+
+    public function mostraCPF(): string{
+
+        return $this->cpfTitular;
     }
 }
