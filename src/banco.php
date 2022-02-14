@@ -1,20 +1,15 @@
 <?php
 
 require 'src/Conta.php';
+require 'src/Titular.php';
+require 'src/Cpf.php';
 
-$primeiraConta = new Conta('512.607.548-98', 'Guilherme');
+$gui = new Titular(new Cpf('512.607.548-98'), 'Guilherme');
+$primeiraConta = new Conta($gui);
 $primeiraConta->depositar(500);
 $primeiraConta->sacar(300); 
 
-echo $primeiraConta->mostraNome() . "\n";
-echo $primeiraConta->mostraCPF() . "\n";
+echo $primeiraConta->recuperaNomeTitular() . "\n";
+echo $primeiraConta->recuperaCpfTitular() . "\n";
 echo $primeiraConta->mostraSaldo() . "\n";
-
-$secundaConta = new Conta('512.607.548-00', 'Julia');
-unset($secundaConta);
-
-echo Conta::mostraContas();
-
-
-
 
