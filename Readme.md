@@ -20,4 +20,4 @@
 
 - refatorando código PHP
 
-- aprendendo sobre classes e funções
+- aprendendo sobre classes e como melhorar funções
