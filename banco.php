@@ -1,11 +1,11 @@
 <?php
 
-require 'src/Conta.php';
-require 'src/Endereco.php';
-require 'src/Titular.php';
-require 'src/Cpf.php';
+require_once "autoload.php";
 
-
+use Alura\Banco\Modelo\Conta\Conta;
+use Alura\Banco\Modelo\Endereco;
+use Alura\Banco\Modelo\Conta\Titular;
+use Alura\Banco\Modelo\Cpf;
 
 $endereco = new Endereco('São Paulo', 'Interlagos', 'Rua Itapuí', '93');
 $gui = new Titular(new Cpf('512.607.548-98'), 'Guilherme', $endereco);
