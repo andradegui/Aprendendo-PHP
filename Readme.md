@@ -22,8 +22,12 @@
 
 - aprendendo sobre classes e como melhorar funções
 
-# Curso 4 
+# Curso 4 - Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces
 
 - Trabalhando com Herança
 
-- 
+- Trabalhando com Polimorfismo - uma referência pode ter vários tipos e se comportar de formas diferentes, porém atendem a um requisito principal
+
+- Trabalhando com namespaces
+
+- Trabalhando com Autoload e refatorando código
