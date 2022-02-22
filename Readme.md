@@ -31,3 +31,5 @@
 - Trabalhando com namespaces
 
 - Trabalhando com Autoload e refatorando código
+
+- Trabalhando com Interfaces - é basicamente uma classe abstrata com todos os métodos abstratos
