@@ -2,7 +2,8 @@
 
 namespace Alura\Banco\Modelo;
 
-class Cpf
+//define q uma classe nao pode ser extendida
+final class Cpf
 {
     private string $numero;
 

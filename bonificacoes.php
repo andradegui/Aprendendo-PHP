@@ -31,12 +31,13 @@ $funcionario4 = new EditorDeVideo(
     3000
 );
 
+$funcionario4->nome = "Guidjermolly";
+echo $funcionario4;
 
+exit();
 $controlador = new ControladorDeBonificacoes();
+$controlador->addBonificacoes($funcionario4);
 $controlador->addBonificacoes($funcionario1);
 $controlador->addBonificacoes($funcionario2);
 $controlador->addBonificacoes($funcionario3);
-$controlador->addBonificacoes($funcionario4);
-
-
 echo $controlador->recuperaTotal();
