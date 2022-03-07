@@ -1,21 +1,53 @@
 <?php
 
-$notas = [9, 3, 10, 5, 10, 8];
+require 'Calculadora.php';
 
-echo "<p>a nota de português é: $notas[0]</p>";
-echo "<p>a nota de matemática é: $notas[1]</p>";
-echo "<p>a nota de geografia é: $notas[2]</p>";
-echo "<p>a nota de história é: $notas[3]</p>";
-echo "<p>a nota de quimíca é: $notas[4]</p>";
+$notas = [10, 4, 5.5];
 
-$qtdNotas = sizeof($notas);
+$calculadora = new Calculadora();
+$media = $calculadora->calculaMedia($notas);
 
-$soma = 0;
-
-for($i=0; $i<$qtdNotas; $i++) {
-    $soma = $soma + $notas[$i];
+if($media){
+    echo "a média é: $media";
+}
+else{
+    echo "não é possível calcular a média";
 }
 
-$media = $soma / $qtdNotas;
+echo "<hr/>";
 
-echo "<p>A média é: $media</p>";
+$saldos = [
+    2500,
+    3000,
+    4400,
+    1000,
+    8700,
+    9000
+];
+
+foreach ($saldos as $saldo) {
+    echo "<p>O saldo é: $saldo</p>";
+}
+
+
+sort($saldos);
+
+echo "<p>O menor saldo é: $saldos[0]</p>";
+
+echo "<hr/>";
+
+$nomes = "Guilherme, Julia, Giovanna";
+
+/*Função "explode" transforma lista de string em array*/
+$arrayNomes = explode(", ", $nomes);
+
+foreach ($arrayNomes as $nome) {
+    echo "<p>Olá $nome</p>";
+}
+
+/*Função "implode" transforma lista de array em string*/
+$nomesJuntos = implode(", ", $arrayNomes);
+echo $nomesJuntos;
+
+echo "<hr/>";
+
