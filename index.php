@@ -1,16 +1,15 @@
-<?php
+<?php declare(strict_types=1); // faz diferenciação entre tipos strings e int 
 
-require 'Calculadora.php';
+namespace Alura;
 
 $notas = [10, 4, 5.5];
 
 $calculadora = new Calculadora();
 $media = $calculadora->calculaMedia($notas);
 
-if($media){
+if ($media) {
     echo "a média é: $media";
-}
-else{
+} else {
     echo "não é possível calcular a média";
 }
 
@@ -51,3 +50,23 @@ echo $nomesJuntos;
 
 echo "<hr/>";
 
+$correntistas_e_compras = [
+    "Giovanni",
+    "João",
+    12,
+    "Maria",
+    25,
+    "Luis",
+    "Luisa",
+    "12",
+];
+
+echo "<pre>";
+
+var_dump($correntistas_e_compras);
+
+ArrayUtils::remover(12 , $correntistas_e_compras);
+
+var_dump($correntistas_e_compras);
+
+echo "</pre>";
