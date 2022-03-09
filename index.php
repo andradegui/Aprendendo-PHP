@@ -2,6 +2,8 @@
 
 namespace Alura;
 
+require 'autoload.php';
+
 $notas = [10, 4, 5.5];
 
 $calculadora = new Calculadora();
@@ -65,7 +67,7 @@ echo "<pre>";
 
 var_dump($correntistas_e_compras);
 
-ArrayUtils::remover(12 , $correntistas_e_compras);
+ArrayUtils::remover("Luis" , $correntistas_e_compras);
 
 var_dump($correntistas_e_compras);
 
