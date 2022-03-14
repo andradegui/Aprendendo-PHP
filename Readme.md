@@ -33,3 +33,13 @@
 - Trabalhando com Autoload e refatorando código
 
 - Trabalhando com Interfaces - é basicamente uma classe abstrata com todos os métodos abstratos
+
+# Curso 5 - PHP: Manipulando coleções com Arrays
+
+- Descobrindo Funções de Arrays
+
+- Como transformar uma array em strings, e vice e versa
+
+- Trabalhando com Arrays Associativos
+
+- Aprendendo o Autoloader
