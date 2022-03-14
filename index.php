@@ -72,3 +72,75 @@ ArrayUtils::remover("Luis" , $correntistas_e_compras);
 var_dump($correntistas_e_compras);
 
 echo "</pre>";
+
+echo "<hr/>";
+
+$correntistas = [
+    "Giovanni", 
+    "João",
+    "Luís",
+    "Luisa",
+    "Rafael"
+];
+
+$correntistasNaoPagantes = [
+    'Luis',
+    'Luisa',
+    'Rafael',
+];
+        //faz a diferenciação do que está na array correntistas, sendo assim irá mostrar apenas os correntistas pagantes
+$correntistasPagantes = array_diff($correntistas, $correntistasNaoPagantes);
+
+//tag pre formata o array no html
+echo "<pre>";
+var_dump($correntistasPagantes);
+echo "<pre>";
+
+echo "<hr>";
+
+$correntistas2 = [
+    "Giovanni", 
+    "João",
+    "Luís",
+    "Maria",
+    "Luisa",
+    "Rafael"
+];
+
+$saldos = [
+    2500,
+    3000,
+    4400,
+    1000,
+    8700,
+    9000
+];
+
+                //combina os indices de 2 vetores
+$relacionados = array_combine($correntistas2, $saldos);
+
+//echo $relacionados["Giovanni"];
+
+$relacionados["Matheus"]=4000;
+
+echo "<pre>";
+var_dump($relacionados);
+echo "</pre>";
+
+echo "<hr>";
+
+//função do php de array q verifica se o indíce existe no vetor
+if(array_key_exists("Joao", $relacionados)){
+    echo "O saldo do Joao é : {$relacionados["Joao"]}";
+} else{
+    echo "Não foi encontrado";
+}
+
+echo "<hr>";
+
+//:: é uma maneira de chamar o método/função de um arquivo
+$maiores = ArrayUtils::encontrarPessoasComSaldoMaior(2000, $relacionados);
+
+echo "<pre>";
+var_dump($maiores);
+echo "<pre>";
