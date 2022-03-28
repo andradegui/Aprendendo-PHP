@@ -43,3 +43,12 @@
 - Trabalhando com Arrays Associativos
 
 - Aprendendo o Autoloader
+
+# Curso 6 - PHP: Manipulando coleções com Arrays (Versão Atualizada)
+
+- count - conta a quantidade de elementos dentro de um array 
+
+- sort - faz com que um array fique ordenado
+
+- usort - 1º paramêtro array | 2º paramêtro função que vai ensinar o usort a ordenar
+
