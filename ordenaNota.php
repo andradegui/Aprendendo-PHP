@@ -3,7 +3,7 @@
 $notas = [
     [
         'aluno' => 'Maria',
-        'nota' => 10,
+        'nota' => 1
     ],
     [
         'aluno' => 'Guilhrme',
@@ -16,15 +16,17 @@ $notas = [
 ];
 
 function ordenaNotas(array $nota1, array $nota2): int{
-    if($nota1['nota'] > $nota2['nota']){
-        return -1;//-1 quer dizer q o 1º elemento vai vir antes que o 2º elemento
-    }
+    // if($nota1['nota'] > $nota2['nota']){
+    //     return -1;//-1 quer dizer q o 1º elemento vai vir antes que o 2º elemento
+    // }
 
-    if($nota2['nota'] > $nota1['nota']){
-        return 1;//1 quer dizer q o 2º elemento vai vir antes que o 1º elemento
-    }
+    // if($nota2['nota'] > $nota1['nota']){
+    //     return 1;//1 quer dizer q o 2º elemento vai vir antes que o 1º elemento
+    // }
 
-    return 0;//caso as notas forem iguais irá retornar 0
+    // return 0;//caso as notas forem iguais irá retornar 0
+
+    return $nota2['nota'] <=> $nota1['nota'];//ordenação decrescente
 }
 
 

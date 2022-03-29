@@ -52,3 +52,24 @@
 
 - usort - 1º paramêtro array | 2º paramêtro função que vai ensinar o usort a ordenar
 
+- rsort - ordena o array (forma decrescente)
+
+- asort - ordena o array junto com a chaves (forma crescente)
+
+- arsort - ordena o array junto com a chaves (forma decrescente)
+
+- ksort - ordena o array de ordem alfabética de acordo chaves (forma crescente)
+
+- krsort - ordena o array de ordem alfabética de acordo chaves (forma decrescente)
+
+- is_array verifica se é um array
+
+- array_is_list, retorna verdadeiro caso as chaves do array forem numeros
+
+- array_key_exists retorna se uma chave existe dentro de determinado array
+
+- isset($array['']) -> faz com que verifique se existe tal elemento no array, e se ele é nulo
+
+- in_array verifica se existe determinado valor dentro de um array
+
+- array_search faz uma pesquisa dentro do array
