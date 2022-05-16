@@ -73,3 +73,7 @@
 - in_array verifica se existe determinado valor dentro de um array
 
 - array_search faz uma pesquisa dentro do array
+
+- array_merge junta dois arrays
+
+- ... -> unpaking operator, mesmo comportamento que o array_merge, e ainda pode adicionar elementos entre os arrays
